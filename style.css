@@ -1,0 +1,48 @@
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+}
+
+#game {
+  display: inline-block;
+  margin-top: 20px;
+}
+
+#board {
+  border: 2px solid black;
+  display: grid;
+  grid-template-columns: repeat(8, 50px);
+  grid-template-rows: repeat(8, 50px);
+}
+
+.cell {
+  background-color: green;
+  border: 1px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px; /* 基本のフォントサイズ */
+  cursor: pointer;
+}
+
+.black {
+  color: black; /* 黒色の駒 */
+  font-size: 50px; /* サイズの50pxに増加 */
+}
+
+.white {
+  color: white; /* 白色の駒 */
+  font-size: 50px; /* サイズの50pxに増加 */
+}
+
+#score {
+  margin-top: 10px;
+}
+
+#difficulty {
+  margin-top: 10px;
+}
+
+#restart {
+  margin-top: 10px;
+}
